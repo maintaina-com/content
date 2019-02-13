@@ -1,49 +1,82 @@
 {
     "name": "horde/content",
     "description": "Tagging application",
-    "type": "project",
+    "type": "horde-application",
     "homepage": "https://www.horde.org",
     "license": "BSD-2-Clause",
     "authors": [
         {
-            "name": "Chuck Hagenbuch",
-            "email": "chuck@horde.org",
+            "name": "Michael J Rubinsky",
+            "email": "mrubinsk@horde.org",
             "role": "lead"
         },
         {
-            "name": "Michael J Rubinsky",
-            "email": "mrubinsk@horde.org",
+            "name": "Chuck Hagenbuch",
+            "email": "chuck@horde.org",
             "role": "lead"
         }
     ],
     "version": "3.0.0",
-    "time": "2017-11-11",
+    "time": "2019-02-13",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "url": "https://github.com/horde/Core",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Date",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Exception",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Db",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Injector",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Rdo",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Util",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Argv",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Controller",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/ElasticSearch",
+            "type": "vcs"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "*",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Core": "^2",
-        "pear-pear.horde.org/Horde_Date": "^2",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Db": "^2",
-        "pear-pear.horde.org/Horde_Injector": "^2",
-        "pear-pear.horde.org/Horde_Rdo": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2",
+        "horde/core": "^2",
+        "horde/date": "^2",
+        "horde/exception": "^2",
+        "horde/db": "^2",
+        "horde/injector": "^2",
+        "horde/rdo": "^2",
+        "horde/util": "^2",
         "ext-gettext": "*",
         "ext-json": "*"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Argv": "^2",
-        "pear-pear.horde.org/Horde_Controller": "^2",
-        "pear-pear.horde.org/Horde_ElasticSearch": "^1"
-    },
-    "replace": {
-        "pear-pear.horde.org/content": "3.*",
-        "pear-horde/content": "3.*"
+        "horde/argv": "^2",
+        "horde/controller": "^2",
+        "horde/elasticsearch": "^1"
     },
     "autoload": {
         "psr-0": {
