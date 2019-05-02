@@ -17,59 +17,23 @@
         }
     ],
     "version": "3.0.0",
-    "time": "2019-02-13",
+    "time": "2019-05-02",
     "repositories": [
         {
-            "url": "https://github.com/horde/Core",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Date",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Exception",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Db",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Injector",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Rdo",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Util",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Argv",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Controller",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/ElasticSearch",
-            "type": "vcs"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
-        "horde/horde-installer-plugin": "*",
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "horde/core": "^2",
-        "horde/date": "^2",
-        "horde/exception": "^2",
-        "horde/db": "^2",
-        "horde/injector": "^2",
-        "horde/rdo": "^2",
-        "horde/util": "^2",
+        "horde/core": "dev-master",
+        "horde/date": "dev-master",
+        "horde/exception": "dev-master",
+        "horde/db": "dev-master",
+        "horde/injector": "dev-master",
+        "horde/rdo": "dev-master",
+        "horde/util": "dev-master",
         "ext-gettext": "*",
         "ext-json": "*"
     },
